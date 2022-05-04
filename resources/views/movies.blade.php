@@ -19,11 +19,13 @@
                   $fullStars = intval(round($movie['vote']/2));
                   $emptyStars = 5 - $fullStars;
                @endphp
+
                @for ($i = 0; $i < $fullStars; $i++)
                   <i class="fa-solid fa-star"></i>
                @endfor
+
                @for ($i = 0; $i < $emptyStars; $i++)
-               <i class="fa-regular fa-star"></i>
+                  <i class="fa-regular fa-star"></i>
                @endfor
             </div>
          </div>
