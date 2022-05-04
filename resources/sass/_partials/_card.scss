@@ -1,18 +1,36 @@
 article {
    padding: 1rem;
-   border: 1px #e6e6e6 solid;
+   border: 1px #4a4a4a solid;
    margin: 0.5rem;
    width: 16rem;
 
-   h2, h3, p {
+   h2, p {
       margin-bottom: 1rem;
+      line-height: 1.25;
    }
 
    h2 {
-      color: #c20000;
+      font-size: 1.35rem;
+   }
+
+   h2, .desc {
+      color: #eaeaea;
+   }
+
+   p {
+      color: #bbb;
+   }
+
+   .rating {
+      @include flex(row, flex-start);
+
+      p {
+         margin: 0;
+         margin-right: 0.5rem;
+      }
    }
 
    .fa-star {
-      color: gold;
+      color: #ffa700;
    }
 }

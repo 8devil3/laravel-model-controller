@@ -1,6 +1,8 @@
 main {
+   padding-top: 2rem;
    .container {
-      @include flex(row, center, stretch, wrap);
-      max-width: 1280px;
+      @include flex(row, flex-start, stretch, wrap);
+      max-width: 1360px;
+      margin: 0 auto;
    }
 }

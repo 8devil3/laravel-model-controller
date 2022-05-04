@@ -35,34 +35,62 @@ header h1 {
   text-transform: uppercase;
 }
 
+main {
+  padding-top: 2rem;
+}
+
 main .container {
   display: flex;
   flex-direction: row;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: stretch;
   flex-wrap: wrap;
   flex-grow: 0;
-  max-width: 1280px;
+  max-width: 1360px;
+  margin: 0 auto;
 }
 
 article {
   padding: 1rem;
-  border: 1px #e6e6e6 solid;
+  border: 1px #4a4a4a solid;
   margin: 0.5rem;
   width: 16rem;
 }
 
 article h2,
-article h3,
 article p {
   margin-bottom: 1rem;
+  line-height: 1.25;
 }
 
 article h2 {
-  color: #c20000;
+  font-size: 1.35rem;
+}
+
+article h2,
+article .desc {
+  color: #eaeaea;
+}
+
+article p {
+  color: #bbb;
+}
+
+article .rating {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  flex-wrap: nowrap;
+  flex-grow: 0;
+}
+
+article .rating p {
+  margin: 0;
+  margin-right: 0.5rem;
 }
 
 article .fa-star {
-  color: gold;
+  color: #ffa700;
 }
 
