@@ -1,0 +1,6 @@
+main {
+   .container {
+      @include flex(row, center, stretch, wrap);
+      max-width: 1280px;
+   }
+}
